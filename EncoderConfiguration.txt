@@ -1,0 +1,14 @@
+# Video Options
+# video_codec accepts value ['h265','h264']
+video_codec=h265
+video_preset=veryslow
+video_crf=20
+video_resize=1
+video_resize_w=1280
+video_resize_h=720
+video_resizer=bicublin
+video_deinterlace=0
+
+# Audio Options
+# audio_codec valid options: copy, flac(will be automatically configured for max compression)
+audio_codec=copy
