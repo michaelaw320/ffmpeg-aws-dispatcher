@@ -10,7 +10,7 @@ source config.sh
 # Execute custom scripts, all scripts in CustomScripts folder
 
 # Push the result to dedi
-scp -r -i "$MASTER_KEYPATH_ON_AWS" -P "$MASTER_PORT" "$AWS_RESULT" $MASTER_USER@$MASTER_ADDRESS:"\"$MASTER_PROJECTPATH\""
+scp -oStrictHostKeyChecking=no -r -i "$MASTER_KEYPATH_ON_AWS" -P "$MASTER_PORT" "$AWS_RESULT" $MASTER_USER@$MASTER_ADDRESS:"\"$MASTER_PROJECTPATH\""
 
 # Delete the EncodeAutomation Folder
 rm -rf "$AWS_PROJECTPATH"
